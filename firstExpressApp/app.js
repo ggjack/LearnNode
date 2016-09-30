@@ -3,7 +3,8 @@ var app= express();
 
 // "/" Hi
 app.get("/",function(req,res){
-   res.send("Hi There!"); 
+   // res.send("Hi There!"); 
+   res.render("some.ejs");
 });
 // "/bye" Goodbye
 app.get("/bye", function(req,res){
@@ -13,6 +14,12 @@ app.get("/bye", function(req,res){
 app.get("/dog", function(req,res){
    res.send("MEOW!!"); 
 });
+
+app.get("/r/:subReddit", function(req,res){
+   var reddit = req.params.subReddit;
+   res.render("reddit.ejs", {subReddit: reddit})
+   // res.send("WELCOME TO THE " + req.params.subReddit.toUpperCase() + " SUBREDDIT!!!");
+})
 
 app.get("*", function (req, res){
    res.send("YOU ARE A STAR!!!");
