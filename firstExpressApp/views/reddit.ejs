@@ -1,1 +1,21 @@
-<h1> WELCOME TO THE <%= subReddit.toUpperCase() %> SUBREDDIT</h1>
+<!-- Added a header for HTML boiler plate -->
+
+<% include partials/header%>
+    <body>
+        <h1> WELCOME TO THE <%= subReddit.toUpperCase() %> SUBREDDIT</h1>
+        
+        <% if(subReddit.toLowerCase()==="league"){ %>
+            <p2> LEAGUE IS BEST CHOICE</p2>
+        <% } %>
+        
+        <% if(subReddit.toLowerCase()==="rem"){ %>
+            <p2> REM IS BEST GRILL</p2>
+        <% } %>
+
+<!-- when doing javascript with = , it sitcks it in the html -->
+<!-- when doing javascript with no = , it performs the arithmetic and logic -->
+<!-- The above examples use the logic to check whether to insert the html in -->
+
+
+<% include partials/footer%>
+<!-- Added a footer for HTML boiler plate -->
