@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "YelpCamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggjack/LearnNode.git"
+  },
+  "author": "Sun Jack Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggjack/LearnNode/issues"
+  },
+  "homepage": "https://github.com/ggjack/LearnNode#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0"
+  }
+}
