@@ -1,7 +1,13 @@
 var express = require("express");
 var app= express();
 var bodyParser= require("body-parser");
-var campgrounds = [];
+var campgrounds = [{name : "M", image: "http://vignette4.wikia.nocookie.net/pokemon/images/3/32/258Mudkip_AG_anime_2.png/revision/latest?cb=20150102063741"},
+{name : "M", image: "http://vignette4.wikia.nocookie.net/pokemon/images/3/32/258Mudkip_AG_anime_2.png/revision/latest?cb=20150102063741"},
+{name : "U", image: "http://vignette4.wikia.nocookie.net/pokemon/images/3/32/258Mudkip_AG_anime_2.png/revision/latest?cb=20150102063741"},
+{name : "D", image: "http://vignette4.wikia.nocookie.net/pokemon/images/3/32/258Mudkip_AG_anime_2.png/revision/latest?cb=20150102063741"},
+{name : "K", image: "http://vignette4.wikia.nocookie.net/pokemon/images/3/32/258Mudkip_AG_anime_2.png/revision/latest?cb=20150102063741"},
+{name : "I", image: "http://vignette4.wikia.nocookie.net/pokemon/images/3/32/258Mudkip_AG_anime_2.png/revision/latest?cb=20150102063741"},
+{name : "P", image: "http://vignette4.wikia.nocookie.net/pokemon/images/3/32/258Mudkip_AG_anime_2.png/revision/latest?cb=20150102063741"}];
 
 
 app.use(bodyParser.urlencoded({extended: true}));
